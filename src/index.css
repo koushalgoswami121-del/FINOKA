@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hanken+Grotesk:wght@400;500;600;700;800;900&family=Geist:wght@400;500;600;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-hanken: "Hanken Grotesk", sans-serif;
+  --font-geist: "Geist", sans-serif;
+  --font-bebas: "Bebas Neue", sans-serif;
+}
+
+/* Custom Float Animation for Particle System */
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.5;
+  }
+  85% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-90vh) scale(0.5);
+    opacity: 0;
+  }
+}
+
+.animate-float-up {
+  position: absolute;
+  pointer-events: none;
+  animation: floatUp linear infinite;
+  will-change: transform;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0c0a09;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #292524;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #44403c;
+}
+
+/* Gentle floating animation for bottle displays to give them life */
+@keyframes floatBottle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float-bottle {
+  animation: floatBottle 5s ease-in-out infinite;
+  will-change: transform;
+}
+.animate-float-bottle-delay-1 {
+  animation: floatBottle 5.5s ease-in-out infinite;
+  animation-delay: 0.5s;
+  will-change: transform;
+}
+.animate-float-bottle-delay-2 {
+  animation: floatBottle 4.5s ease-in-out infinite;
+  animation-delay: 1.2s;
+  will-change: transform;
+}
+.animate-float-bottle-delay-3 {
+  animation: floatBottle 5.2s ease-in-out infinite;
+  animation-delay: 0.8s;
+  will-change: transform;
+}
+.animate-float-bottle-delay-4 {
+  animation: floatBottle 4.8s ease-in-out infinite;
+  animation-delay: 1.5s;
+  will-change: transform;
+}
+
+

@@ -1,0 +1,8 @@
+{
+  "name": "Finoka Cold Drink",
+  "description": "An ultra-premium, interactive showcase for Finoka Cold Drink featuring five dynamic flavor profiles, fluid bottle animations, custom blooming glow states, nutrition logs, a live customized cart, and an ingredients deep-dive.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
