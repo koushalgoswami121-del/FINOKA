@@ -1,4 +1,9 @@
 import { Flavor } from "./types";
+import originalBottle from "./assets/images/finoka_original_bottle_transparent.webp";
+import lemonBottle from "./assets/images/finoka_lemon_bottle_transparent.webp";
+import berryBottle from "./assets/images/finoka_berry_bottle_transparent.webp";
+import orangeBottle from "./assets/images/finoka_orange_bottle_transparent.webp";
+import blueBottle from "./assets/images/finoka_blue_bottle_transparent.webp";
 
 export const FLAVORS: Flavor[] = [
   {
@@ -10,7 +15,7 @@ export const FLAVORS: Flavor[] = [
     price: 3.99,
     tagline: "Timeless taste. Bold and refreshing.",
     desc: "The original recipe, crafted with natural spring water, pure cane sugar elements, and our signature botanicals, perfected for the modern sophisticated palate.",
-    image: "/src/assets/images/finoka_original_bottle_transparent.webp",
+    image: originalBottle,
     nutrition: {
       calories: 45,
       carbs: "11g",
@@ -31,7 +36,7 @@ export const FLAVORS: Flavor[] = [
     price: 4.25,
     tagline: "Zesty citrus fusion.",
     desc: "An electrifying blend of hand-picked Sicilian lemons and Persian limes. A crisp, tart explosion of clean citrus from sun-drenched groves.",
-    image: "/src/assets/images/finoka_lemon_bottle_transparent.webp",
+    image: lemonBottle,
     nutrition: {
       calories: 35,
       carbs: "9g",
@@ -52,7 +57,7 @@ export const FLAVORS: Flavor[] = [
     price: 4.50,
     tagline: "Wild forest berry medley.",
     desc: "A deep, mystical fusion of wild blackberries, deep blue huckleberries, and ripe mountain raspberries. Intense, rich, and perfectly balanced darkness.",
-    image: "/src/assets/images/finoka_berry_bottle_transparent.webp",
+    image: berryBottle,
     nutrition: {
       calories: 48,
       carbs: "12g",
@@ -73,7 +78,7 @@ export const FLAVORS: Flavor[] = [
     price: 4.25,
     tagline: "Concentrated solar energy.",
     desc: "Vivid blood orange notes balanced with mandarin zests and a sophisticated, slightly bitter botanical finish. Pure carbonated sunshine.",
-    image: "/src/assets/images/finoka_orange_bottle_transparent.webp",
+    image: orangeBottle,
     nutrition: {
       calories: 42,
       carbs: "10g",
@@ -94,7 +99,7 @@ export const FLAVORS: Flavor[] = [
     price: 4.50,
     tagline: "Glacial cooling meets arctic blue.",
     desc: "The ultimate pure thirst quencher, combining mountain blueberries with a crisp arctic cooling finish. Delivers an immediate revitalizing chill effect.",
-    image: "/src/assets/images/finoka_blue_bottle_transparent.webp",
+    image: blueBottle,
     nutrition: {
       calories: 38,
       carbs: "9g",

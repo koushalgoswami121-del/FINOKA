@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { Sparkles, Shield, Droplet, Leaf, Earth } from "lucide-react";
 import { useState } from "react";
+import purityStandards from "../assets/images/finoka_purity_standards.webp";
 
 export default function Ingredients() {
   const [activeCard, setActiveCard] = useState<number | null>(null);
@@ -99,7 +100,7 @@ export default function Ingredients() {
               <img
                 alt="Fresh citrus splash with floating oranges, lemons, and limes in clean water droplets"
                 className="w-full h-full object-cover rounded-[40px] shadow-2xl relative z-10 border border-white/10 select-none hover:scale-102 transition-transform duration-700"
-                src="/src/assets/images/finoka_purity_standards.webp"
+                src={purityStandards}
                 referrerPolicy="no-referrer"
               />
 
